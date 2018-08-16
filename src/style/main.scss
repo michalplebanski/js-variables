@@ -1,5 +1,6 @@
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -7,10 +8,18 @@
 body {
 	min-height: 100vh;
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background-color: #000;
 	color: #fff;
 	font-size: 4vh;
@@ -30,5 +39,6 @@ body {
 img {
 	padding: var(--spacing);
 	background: var(--base);
-	filter: blur(var(--blur));
+	-webkit-filter: blur(var(--blur));
+	        filter: blur(var(--blur));
 }
