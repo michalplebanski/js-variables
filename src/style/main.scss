@@ -20,3 +20,15 @@ body {
 .input {
 	width: 10vw;
 }
+
+:root {
+	--base: #ffc600;
+	--spacing: 50px;
+	--blur: 10px;
+}
+
+img {
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
